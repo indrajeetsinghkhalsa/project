@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+   .files{height: 30px; margin: 10px 10px 0 0;width: 250px; }
+      .add{ font-size: 14px; color: #4dabab; border: none; }
+      .rem a{ font-size: 14px; color: #4dabab; border: none; }
+      .submit{width: 110px; height: 30px; background: #ADABAB; color: #fff;text-align: center;}
+    </style>
+        <script>
+      $(document).ready(function() {
+        $(".add").click(function() {
+          $('<div><input class="files" name="user_files[]" type="file" ><span class="rem" ><a href="javascript:void(0);" >Remove</span></div>').appendTo(".contents");
+
+        });
+        $('.contents').on('click', '.rem', function() {
+          $(this).parent("div").remove();
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+  
+  <center>	
+<form name="f1" action="Sell.php" method="post">   
+   <table border="1" width="50%">
+    <tr>
+     <th width="30%">Product Name</th>
+     <td width="30%"><input type="text" name="product"></input></td>
+    </tr>
+    <tr>
+     <th width="30%">Product Price</th>
+     <td width="50%"><input type="text" name="price"></input></td>
+    </tr>
+	<tr>
+     <th width="30%">Warranty Period</th>
+     <td width="30%"><input type="text" name="warranty"></input></td>
+    </tr>
+	<tr>
+     <th width="30%">Description</th>
+     <td width="30%"><input type="text" name="description"></input></td>
+    </tr>
+	<tr>
+     <th width="30%">category</th>
+     <td width="30%"><input type="text" name="select"></input></td>
+    </tr>
+     <td></td>
+     <td width="30%"><input  type="submit" name="Submit" value="NEXT"></input></td>
+    </tr>
+   </table>
+  </form>
+</center>		   
+</fieldset>
+  </body>
+</html>
+

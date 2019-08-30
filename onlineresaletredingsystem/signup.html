@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+h2{
+text-indent:115px;
+	text-align:left;
+	font-style:italic;
+	font-family:Arial;
+    list-style-type:none;
+    margin: 10px 0px;
+	margin-top: 10px;
+    padding:20px,0px;
+    width: 100%;
+    display: block;
+	color:white;
+    background-color:none;
+}
+f1{
+    list-style-type: none;
+    margin-bottom: 50px 0px;
+    padding: 0;
+    width: 100%;
+    display: block;
+	text-align:center;
+}
+input[type=text], select {
+    width: 20%;
+    padding: 9px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 20%;
+    padding: 9px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 20%;
+    padding: 9px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+body{
+background-image:url("FY16_INNO_SNOWCAP_v2_HERO_RT_NoEarl_V1_hd_16.jpg");
+background-color:white;
+color:white;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #908888;
+    color: Black;
+    padding: 14px 20px;
+    margin: 8px 60PX;
+    border: none;
+	font-weight:bold;
+font-family:Arial;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: #00E6FF;
+}
+div {
+font-weight:bold;
+font-family:Arial;
+color:white;
+width:100%;
+border-radius: 5px;
+padding: 20px;
+}
+</style>
+<body>
+
+<h2>Sign up</h2>
+
+<div>
+  <form method="post" action="signup.php">
+    <label for="fname">First Name</label><br/>
+    <input type="text" id="fname" name="firstname"><br>
+
+    <label for="lname">Last Name</label><br/>
+    <input type="text" id="lname" name="lastname"><br>
+	
+	<label for="Email address"><br/>Email address</label><br/>
+    <input type="email" id="email" name="email_address"><br>
+	
+	<label for="Password">Password</label><br/>
+    <input type="password" id="Password" name="password"><br>
+	
+	<label for="Re-type Password">Re-type Password</label><br/>
+    <input type="password" id="Re-type Password" name="re_password"><br>
+	
+	<label for="Contact no.">Contact no.</label><br/>
+    <input type="text" id="Contact no." name="contact_no"><br>
+	
+	<label for="UID no.">UID no.</label><br/>
+    <input type="text" id="UID no." name="UID_no"><br>
+	
+
+    <label for="country">State</label><br/>
+    <select id="country" name="country">
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+	  <option value="Bihar">Bihar</option>
+	<option value="Chattisgarh">Chattisgarh</option>
+	<option value="Goa">Goa</option>
+	<option value="Gujarat">Gujarat</option>
+	<option value="Haryana">Haryana</option>
+	<option value="Himachal Pradesh">Himachal Pradesh</option>
+	<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+	<option value="Jharkhand">Jharkhand</option>
+	<option value="Karnataka">Karnataka</option>
+	<option value="Kerla">Kerla</option>
+	<option value="Madhya Pradesh">Madhya Pradesh</option>
+	<option value="Maharashtra">Maharashtra</option>
+ </select><br/>
+	
+  
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+<footer>
+<f1>
+copyright @copy;
+</f1>
+</footer>
+</body>
+</html>
